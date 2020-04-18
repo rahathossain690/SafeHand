@@ -11,30 +11,32 @@
     <com.otaliastudios.cameraview.CameraView
         android:id="@+id/camera"
         android:keepScreenOn="true"
+        app:cameraMode="picture"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="10.5"
         tools:ignore="MissingConstraints">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:weightSum="12"
-            android:orientation="vertical">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="4"
-                ></LinearLayout>
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:weightSum="12"-->
+<!--            android:orientation="vertical">-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_weight="4"-->
+<!--                ></LinearLayout>-->
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:src="@drawable/overlay_staying_home"
                 app:layout_drawOnPreview="true"
+                android:layout_marginTop="100dp"
+                android:id="@+id/overlay"
                 app:layout_drawOnPictureSnapshot="true"
-                app:layout_drawOnVideoSnapshot="false"/>
-        </LinearLayout>
+                app:layout_drawOnVideoSnapshot="true"/>
+<!--        </LinearLayout>-->
     </com.otaliastudios.cameraview.CameraView>
     <LinearLayout
         android:layout_width="match_parent"
@@ -42,7 +44,13 @@
         android:layout_weight="1.5"
         android:orientation="vertical"
         android:background="#ffffff"
+        android:id="@+id/sada"
         >
+<!--        <ImageView-->
+<!--            android:layout_width="60dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:src="@drawable/overlay_staying_home">-->
+<!--        </ImageView>-->
         <ImageView
             android:layout_width="60dp"
             android:layout_height="match_parent"
