@@ -23,6 +23,11 @@ import com.otaliastudios.cameraview.controls.Facing;
 import com.otaliastudios.cameraview.controls.Flash;
 import com.otaliastudios.cameraview.controls.Mode;
 
+/*
+*  Rahat Hossain
+*  Date : 17-4-2020
+*/
+
 public class MainActivity extends AppCompatActivity {
 
     public static PictureResult excess;
