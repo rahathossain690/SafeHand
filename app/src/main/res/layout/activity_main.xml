@@ -33,6 +33,7 @@
                 android:src="@drawable/overlay_staying_home"
                 app:layout_drawOnPreview="true"
                 android:layout_marginTop="100dp"
+                android:padding="40dp"
                 android:id="@+id/overlay"
                 app:layout_drawOnPictureSnapshot="true"
                 app:layout_drawOnVideoSnapshot="true"/>
